@@ -1,0 +1,17 @@
+CREATE DATABASE servico_social;
+
+USE servico_social;
+
+CREATE TABLE usuarios (
+    id VARCHAR(36) PRIMARY KEY,
+    nome_completo VARCHAR(255),
+    data_nascimento DATE,
+    genero VARCHAR(50),
+    estado_civil VARCHAR(50),
+    identificacao VARCHAR(50) UNIQUE,
+    endereco TEXT,
+    telefone VARCHAR(20),
+    email VARCHAR(100),
+    perfil VARCHAR(50),
+    senha VARCHAR(255)
+);
